@@ -27,15 +27,13 @@ header .container {
 
 header .logo {
     margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times; 
-    font-size: 30px;
+    width: 100px;
 }
 
 header nav a {
     text-decoration: none;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 30px;
     font-size: 14px;
 }
 

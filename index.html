@@ -13,18 +13,32 @@
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
     <title>NETFLIX CLONE</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
+            <img class="logo" src="img/logo.svg" alt="NETFLIX" srcset="">
+            <nav class="navleft" aria-label="menuleft">
                 <a href="#">Início</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Bombando</a>
                 <a href="#">Minha lista</a>
                 <a href="#">Assista de novo</a>
+            </nav>
+
+            <nav class="navright" aria-label="menuright">
+                <a href="#">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </a>
+                <a href="#">INFANTIL</a>
+                <a href="#">
+                    <i class="fas fa-gift" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-bell" aria-hidden="true"></i>
+                </a>
             </nav>
         </div>
     </header>
@@ -42,11 +56,11 @@
 <!--  href="https://www.netflix.com/title/80047616" target="_blank" aria-hidden="true" -->
                 <div class="botoes">
                     <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
+                        <i class="fas fa-play" aria-hidden="true"></i>
                         Assistir
                     </button>
                     <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
                         Mais informações
                     </button>
                 </div>
