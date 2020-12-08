@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
 
-    <!--responsividade-->
+    <!-- responsividade -->
     <link rel="stylesheet" href="style/responsive.css">
 
-    <!--owl css-->
+    <!-- owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!-- modal -->
+    <link rel="stylesheet" href="style/modal.css">
 
     <title>NETFLIX CLONE</title>
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -30,14 +34,14 @@
 
             <nav class="navright" aria-label="menuright">
                 <a href="#">
-                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <i class="fas fa-search"></i>
                 </a>
                 <a href="#">INFANTIL</a>
                 <a href="#">
-                    <i class="fas fa-gift" aria-hidden="true"></i>
+                    <i class="fas fa-gift"></i>
                 </a>
                 <a href="#">
-                    <i class="fas fa-bell" aria-hidden="true"></i>
+                    <i class="fas fa-bell"></i>
                 </a>
             </nav>
         </div>
@@ -55,14 +59,14 @@
                 </p>
 <!--  href="https://www.netflix.com/title/80047616" target="_blank" aria-hidden="true" -->
                 <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fas fa-play" aria-hidden="true"></i>
+                    <a href="https://www.netflix.com/search?q=o%20estagiario" role="button" class="botao">
+                        <i class="fas fa-play"></i>
                         Assistir
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    </a>
+                    <a href="#info" role="button" name="modal" class="botao">
+                        <i class="fas fa-info-circle"></i>
                         Mais informações
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -103,6 +107,31 @@
         </div>
     </div>
 
+    <div id="boxes">
+        <div id="info" class="window">
+            <div class="container-modal">
+                <i class="close far fa-times-circle"></i>
+
+                <div class="row">
+                    <p class="title-modal">O ESTAGIÁRIO (2015)</p>
+                    <p class="description-modal">
+                     Estressada com o mundo da moda, a empresária Jules recebe ajuda e inspiração de quem menos esperava: Ben, um estagiário viúvo e septuagenário.
+                     Por mais que enfrente o inevitável choque de gerações, logo ele conquista os colegas de trabalho e se aproxima cada vez mais de Jules, que passa a vê-lo como um amigo.
+                     <br><br>
+                     Elenco: Robert De Niro, Anne Hathaway <br>
+                     Gênero: Comédia <br>
+                     Cenas e momentos: Espirituosos
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=UCHswQrE2eA" role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        Trailer
+                    </a>
+                </div>    
+            </div>
+        </div>    
+        <div id="mask"></div>
+    </div>  
+    
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 <script src="js/owl/jquery.min.js"></script>
 <script src="js/owl/owl.carousel.min.js"></script>

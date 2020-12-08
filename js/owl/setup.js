@@ -14,3 +14,26 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+$(document).ready(function() {
+
+    $('a[name=modal]').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href');
+        var maskHeight = $(document).height();
+        $('#mask').css({ 'height': maskHeight });
+        $('#mask').fadeIn(1000);
+        $('#mask').fadeTo("slow", 0.8);
+        $(id).fadeIn(2000);
+    });
+
+    $('.window .close').click(function(e) {
+        e.preventDefault();
+        $('#mask, .window').hide();
+    });
+
+    $('#mask').click(function() {
+        $(this).hide();
+        $('.window').hide();
+    });
+});
